@@ -1,0 +1,37 @@
+.elementor-kit-6{--e-global-color-primary:#111214;--e-global-color-secondary:#EFEFF0;--e-global-color-text:#FCFCFC;--e-global-color-accent:#24B90D;--e-global-color-9f11076:#111214;--e-global-color-f3237be:#24B90D;--e-global-color-d11fb46:#C7C7CA;--e-global-color-f0229f9:#1A1B1E;--e-global-typography-primary-font-family:"Poppins";--e-global-typography-primary-font-weight:700;--e-global-typography-secondary-font-family:"Poppins";--e-global-typography-secondary-font-weight:600;--e-global-typography-text-font-family:"Poppins";--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"Poppins";--e-global-typography-accent-font-weight:500;}.elementor-kit-6 a{color:var( --e-global-color-d11fb46 );font-family:"Poppins", Sans-serif;font-weight:700;}.elementor-kit-6 a:hover{color:var( --e-global-color-secondary );font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1140px;}.e-con{--container-max-width:1140px;}.elementor-widget:not(:last-child){margin-block-end:20px;}.elementor-element{--widgets-spacing:20px 20px;}{}h1.entry-title{display:var(--page-title-display);}.elementor-kit-6 e-page-transition{background-color:#FFBC7D;}.site-header{padding-inline-end:0px;padding-inline-start:0px;}@media(max-width:1024px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}}@media(max-width:767px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-con{--container-max-width:767px;}}/* Start custom CSS */loader {
+    .loader {
+  display: block;
+  --height-of-loader: 4px;
+  --loader-color: #0071e2;
+  width: 130px;
+  height: var(--height-of-loader);
+  border-radius: 30px;
+  background-color: rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  background: var(--loader-color);
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 30px;
+  animation: moving 1s ease-in-out infinite;
+  ;
+}
+
+@keyframes moving {
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+    right: 0;
+    left: unset;
+  }
+}
+}/* End custom CSS */
